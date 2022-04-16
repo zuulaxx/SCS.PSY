@@ -1,3 +1,4 @@
+.sophiesection,
 main {
     text-align: center;
 }
@@ -21,9 +22,65 @@ body {
     padding: 3rem 0;
 }
 
+/* <!-- --> */
 .sophiesection {
     font-family: Poppins, sans-serif;
     background: #ffffff;
     color: #333;
     padding: 3rem 0;
+}
+
+.logo {
+    cursor: pointer;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    padding: 180px 0px;
+}
+
+.logo:hover .fadedbox {
+    opacity: 0.8;
+}
+
+.logo .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.logo .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.logo:hover .title,
+.logo:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
 }
