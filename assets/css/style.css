@@ -84,3 +84,9 @@ body {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
 }
+
+.footer {
+    text-align: right;
+    font-size: 10px;
+}
+
